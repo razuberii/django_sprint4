@@ -1,7 +1,13 @@
+# Импорт класса AppConfig из модуля django.apps
 from django.apps import AppConfig
 
-
+# Определение конфигурации приложения для блога
 class BlogConfig(AppConfig):
-    default_auto_field = 'django.db.models.BigAutoField'
-    name = 'blog'
-    verbose_name = 'Блог'
+    # Установка значения по умолчанию для автоматического поля первичного ключа
+    default_auto_field = 'django.db.models.BigAutoField'  # Используется для создания больших автоинкрементных полей
+
+    # Имя приложения в формате Python
+    name = 'blog'  # Указывает на имя приложения, которое будет использоваться в проекте Django
+
+    # Человекочитаемое имя приложения, которое будет отображаться в административной панели
+    verbose_name = 'Блог'  # Название приложения на русском языке для отображения в админке
