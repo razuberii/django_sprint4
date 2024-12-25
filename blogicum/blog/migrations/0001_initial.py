@@ -1,5 +1,3 @@
-# Сгенерировано Django 3.2.16 на 2024-03-03 14:48
-
 from django.conf import settings  # Импорт настроек проекта
 from django.db import migrations, models  # Импорт необходимых классов для миграций и моделей
 import django.db.models.deletion  # Импорт для управления зависимостями при удалении объектов
