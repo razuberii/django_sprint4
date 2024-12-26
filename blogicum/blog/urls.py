@@ -63,15 +63,15 @@ urlpatterns = [
         views.CategoryDetailView.as_view(),  # Используем представление CategoryDetailView для отображения постов в категории
         name='category_posts'  # Имя маршрута для просмотра постов по категории
     ),
-    # Страница профиля пользователя по его имени пользователя (slug)
+    # Страница профиля пользователя по его имени пользователя (str)
     path(
-        'profile/<slug:username>/',
+        'profile/<str:username>/',
         views.ProfileView.as_view(),  # Используем представление ProfileView для отображения профиля пользователя
         name='profile'  # Имя маршрута для доступа к профилю пользователя
     ),
-    # Страница редактирования профиля пользователя по его имени пользователя (slug)
+    # Страница редактирования профиля пользователя по его имени пользователя (str)
     path(
-        'profile/<slug:username>/edit/',
+        'profile/<str:username>/edit/',
         views.ProfileEditView.as_view(),  # Используем представление ProfileEditView для редактирования профиля пользователя
         name='edit_profile'  # Имя маршрута для редактирования профиля пользователя
     ),
